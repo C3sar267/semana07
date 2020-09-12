@@ -1,0 +1,199 @@
+*,*::before, *::after {box-sizing: border-box;}
+
+
+body{
+    background-color: rgb(180, 180, 180)99, 199);
+}
+
+
+
+
+/*Contenedor Padre*/
+.Contenedor-Padre{
+
+    width: 70vw;
+    height: 100%;
+    background-color: rgb(175, 175, 175);
+    font-family:  'Livvic', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    margin-top: 1em;
+   
+
+    /*-----------APLICANDO el Grid----------------*/
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*Aqui cuantas lineas verticales quiero*/
+    grid-template-rows: repeat(3, auto);   /*Aqui cuantas Lineas Horizonatales quiero*/
+    grid-template-areas: "header header header "   "main main main"   "aside aside aside"   "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside" "footer footer footer" "footer footer footer";
+
+}
+
+header {
+
+    background: rgb(255, 255, 255);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer{
+
+    background: rgb(62, 255, 3);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ aside{
+
+    background-color: rgb(255, 254, 254);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+
+ /*-----------MAIN CELESTE DONDE ESTAN SUS TUTLOS----------------*/
+ main{
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    
+    height: 30vh;
+
+     grid-area: main;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+
+      }
+
+
+/*-----------Mis Subtitulo----------------*/
+
+.Titles{
+
+    width: 780px;
+    height: 200px;
+    
+    padding: 0 auto;
+    
+
+}
+
+
+.Title-Principal{
+
+    padding: 0 auto;
+    margin: auto;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 74px;
+    /* identical to box height, or 168% */
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #FFFFFF;
+    
+}
+
+
+.Title-Principal--colorblue{
+
+
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+/* or 150% */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.78);
+
+
+}
+
+
+
+
+
+
+/*-----------Mis menus----------------*/
+
+
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    
+    height: 90px;
+    width: 450px;
+    padding: 1em auto;
+    margin-left: auto;
+}
+
+.Menu a{
+    flex-grow: 1;
+    font-family: 'Livvic', sans-serif;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu a:hover{
+    
+
+    transition: all 0.7s ease;
+    
+}
+
+
+/*-----------Sub Aside-contenido----------------*/
+
+.Sub-Aside{
+
+
+    width: 1000px;
+    height: 1000px;
+    background-color: darkgoldenrod;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*Aqui cuantas lineas verticales quiero*/
+    grid-template-rows: repeat(3, auto);   /*Aqui cuantas Lineas Horizonatales quiero*/
+    grid-template-areas: "search search search "   "img-1 img-1 img-1"   "img-2 img-2 img-2"  "img-3 img-3 img-3";
+}
+
+/*-----------Sub Aside-contenido----------------*/
+
+.search{
+
+
+    background: rgb(62, 255, 3);
+    grid-area: search;
+    display: flex;
+}
+
+
+

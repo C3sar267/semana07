@@ -1,0 +1,66 @@
+
+
+
+
+/*Contenedor Padre*/
+.Contenedor-Padre{
+
+    width: 1366px;
+    height: 200vh;
+    background-color: rgb(175, 175, 175);
+    font-family:  'Livvic', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    margin-top: 1em;
+   
+
+    /*-----------APLICANDO el Grid----------------*/
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*Aqui cuantas lineas verticales quiero*/
+    grid-template-rows: repeat(3, auto);   /*Aqui cuantas Lineas Horizonatales quiero*/
+    grid-template-areas: "header header header "   "main main main"   "aside aside aside"   "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside" "footer footer footer" "footer footer footer";
+
+}
+
+header {
+
+    background: rgb(253, 253, 253);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer{
+
+    background: rgb(62, 255, 3);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ aside{
+
+    background-color: rgb(255, 95, 2);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ main{
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    
+    
+
+     grid-area: main;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      }

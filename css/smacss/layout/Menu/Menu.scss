@@ -1,0 +1,29 @@
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    
+    height: 20px;
+    width: 350px;
+    margin-left:  auto;
+}
+
+.Menu a{
+    flex-grow: 1;
+    font-family: 'Livvic', sans-serif;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu a:hover{
+    
+
+    transition: all 0.7s ease;
+    
+}
+
