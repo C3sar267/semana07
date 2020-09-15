@@ -1,0 +1,81 @@
+.Container{
+
+    max-width: var(--space);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: chartreuse;
+    width: 70%;
+    height: 100%;
+    
+     /*-----------APLICANDO el Grid----------------*/
+
+
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);/*Aqui cuantas lineas verticales quiero*/
+     grid-template-rows: repeat(3, auto);   /*Aqui cuantas Lineas Horizonatales quiero*/
+     grid-template-areas: "header header header "   "main main main"   "main main main"    "form form form"    "aside aside aside"   "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside"  "aside aside aside" "footer footer footer" "footer footer footer";
+ 
+}
+
+
+
+
+header{
+    
+    background: rgb(255, 255, 255);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+
+main{
+
+    background: rgb(13, 28, 167);
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+
+    background: rgb(227, 252, 0);
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+aside{
+
+    background: rgb(167, 13, 154);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+
+    background: rgb(255, 104, 3);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
